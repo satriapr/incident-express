@@ -35,10 +35,10 @@ To run project (debug - http://localhost:5000):
 npm i && npm run dev
 ```
 
-To run project (docker - http://localhost:5001):
+To run project (docker - http://localhost:5000):
 ```bash
-docker load -i incident-express.tar
-docker run -it -p 5001:5000 incident-express
+docker pull satriap/incident-express:latest
+docker run -it -p 5000:5000 satriap/incident-express
 ```
 
 To run test:
