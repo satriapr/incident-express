@@ -7,7 +7,7 @@ export default {
     CODE: 204,
     MESSAGE: 'NO CONTENT',
   },
-  STATUS: {
+  STATUS: { 
     OPEN: 'Open',
   },
   PRIORITY_LABEL: ['Critical', 'High', 'Medium', 'Low'],
