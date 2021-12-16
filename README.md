@@ -8,8 +8,8 @@ This is a simple Incident Management REST API. Using Express, Typescript, and Mo
 - [Mongoose](https://mongoosejs.com/): Mongo DB Object Modelling. Reasons for using this: 
     - Using NoSQL in general because the incident management dashboard would not contain many relations, similar with logger. If we want to build Marketplace, or something with many relations, I prefer using SQL database and GraphQL.
     - It will be more beneficial to use NoSQL because the write and read is very fast. 
-    - Using this over CouchDB because I don't have experience in CouchDB, and the library seems very old and not updated for years(node-couchdb). Also because of limited time I'm not confident to use this DB.
-    - Another thing is because in my research, couchDB is great if we want to develop mobile app that's support offline mode. In this Incident Management case, we don't need it. CouchDB also seems slower in read and write.
+    - Using MongoDB over CouchDB because I don't have experience in CouchDB, and given the limited time, I'm not confident I can finish the task within timeline using CouchDB. The library also seems very old and not updated for years(node-couchdb).
+    - Another thing is because in my research, couchDB is great if we want to develop mobile app that's support offline mode. In this Incident Management case, we don't need it.
 - [TypeScript](https://www.typescriptlang.org/): Typed language for Javascript. Reasons for using this:
     - Support OOP, e.g. classes, interfaces, inheritance. In my opinion this is good as project grows in size and complexity.
     - This gives code more structure and readable, hence speeds up debugging and refactoring.
