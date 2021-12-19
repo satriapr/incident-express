@@ -23,7 +23,7 @@ This is a simple Incident Management REST API. Using Express, Typescript, and Mo
 - controllers folder: Controllers. Responsible for communication between client and service. Retrieve request, call service, and return response. Shouldn't contain business logic.
 - constants folder: Constant.
 - services: Responsible for serving what controllers need, contains query and business logic. Using Dependency Injection to be injected to controller.
-- utils: Help
+- utils: Helper function.
 - models: Schema structure.
 - .test file: Testing.
 - Not usingTypescript because I think React is going more functional with hooks, hence I'm using PropTypes to check props.
@@ -66,7 +66,7 @@ GET /incidents
 ```
 
 ```
-curl -i -H 'Accept: application/json' http://localhost:5001/incidents
+curl -i -H 'Accept: application/json' http://localhost:5000/incidents
 ```
 
 Response:
@@ -107,7 +107,7 @@ POST /incident
 ```
 
 ```
-curl -i -H 'Accept: application/json' -d 'title=Title&description=Description&priorityIndex=0&assignee=61b5b3f4643f28575d569ead&reportedBy=61b5b316643f28575d569eac' http://localhost:5001/incident
+curl -i -H 'Accept: application/json' -d 'title=Title&description=Description&priorityIndex=0&assignee=61b5b3f4643f28575d569ead&reportedBy=61b5b316643f28575d569eac' http://localhost:5000/incident
 ```
 
 Response:
@@ -125,7 +125,7 @@ PUT /incident-status
 ```
 
 ```
-curl -i -H 'Accept: application/json' -X PUT -d '_id=61bb620db342fb130411bdd5&newStatus=Resolved' http://localhost:5001/incident-status
+curl -i -H 'Accept: application/json' -X PUT -d '_id=61bb620db342fb130411bdd5&newStatus=Resolved' http://localhost:5000/incident-status
 ```
 
 Response:
@@ -143,7 +143,7 @@ DELETE /incident/:_id
 ```
 
 ```
-curl -i -H 'Accept: application/json' -X DELETE http://localhost:5001/incident/61bb648eb342fb130411bdf8
+curl -i -H 'Accept: application/json' -X DELETE http://localhost:5000/incident/61bb648eb342fb130411bdf8
 ```
 
 Response:
@@ -161,7 +161,7 @@ GET /users
 ```
 
 ```
-curl -i -H 'Accept: application/json' http://localhost:5001/users
+curl -i -H 'Accept: application/json' http://localhost:5000/users
 ```
 
 Response:
