@@ -7,7 +7,7 @@
     "build": "tsc",
     "start": "tsc & node .",
     "dev": "concurrently \"tsc -w\" \"nodemon dist/server.js\"",
-    "test": "npx ./node_modules/.bin/./jest --config ./jest.config.js --coverage",
+    "test": "jest --config ./jest.config.js --coverage",
     "test:watch": "jest --watch"
   },
   "author": "Satria Permana",
