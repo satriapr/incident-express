@@ -14,7 +14,7 @@ This is a simple Incident Management REST API. Using Express, Typescript, and Mo
     - Support OOP, e.g. classes, interfaces, inheritance. In my opinion this is good as project grows in size and complexity.
     - This gives code more structure and readable, hence speeds up debugging and refactoring.
 - [Lodash](https://lodash.com/): functional library for general use.
-- [Jest](https://jestjs.io/docs/en/getting-started) and [Enzyme](https://airbnb.io/enzyme/docs/api/): js testing framework.
+- [Jest](https://jestjs.io/docs/en/getting-started): js testing framework.
 - [ESLint](https://eslint.org/): Javascript linter for ES pattern.
 - [Prettier](https://prettier.io/): Code formatter.
 - Other supporting libraries, can be found in package.json.
@@ -26,7 +26,6 @@ This is a simple Incident Management REST API. Using Express, Typescript, and Mo
 - utils: Helper function.
 - models: Schema structure.
 - .test file: Testing.
-- Not usingTypescript because I think React is going more functional with hooks, hence I'm using PropTypes to check props.
 
 ### III. Run and Test
 
