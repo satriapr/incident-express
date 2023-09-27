@@ -45,7 +45,7 @@ To run test:
 npm test
 ```
 
-## What can be improved (this is not done because of time limit to do both BE and FE, also because of work load in current company)
+## What can be improved (this is not done because of the work load in current company)
 
 ### I. Feature
 - Currently route is not protected. Should use login and auth, in different service.
